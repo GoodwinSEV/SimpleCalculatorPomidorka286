@@ -25,8 +25,10 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             SimpleCalculatorPomidorka286Theme {
+                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
                     MainScreen(
                     )
+                }
             }
         }
     }
